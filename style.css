@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --primary: #fff;
+    --secundary: #374650;
+    --text: #ff2501;
+}
+body{
+    background-color: var(--primary);
+}
+.darkmode{
+    --primary: #374650;
+    --secundary: #fff;
+}
+.container{
+    max-width: 1440px;
+    margin: auto;
+}
+
+/* header section */
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+ 
+    
+}
+.header__logo{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--secundary);
+}
+.header__logo-color{
+    color: var(--text);
+}
+.header__menu-list{
+    display: flex;
+    gap: 70px;
+    flex: 1;
+    justify-content: flex-end;
+    margin-right: 50px;
+
+}
+.header__menu-list li a{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--secundary);
+}
+.header__menu-list li a:hover{
+    color: var(--text);
+}
+/* swicth */
+
+.switch .fa-sun{
+    display: none;
+
+}
+
+.switch .fa-moon{
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--secundary);
+}
+
+.darkmode .fa-moon{
+    display: none;
+    
+}
+
+.darkmode .fa-sun{
+    cursor: pointer;
+    display: block;
+    color: var(--secundary);
+    font-size: 1.5rem;
+}
+
+/* menu hamburguesa */
+
+.menu-btn .fa-bars{
+    display: none;
+    font-size: 1.4rem;
+    color: var(--secundary);
+}
+
+/* wrapper section */
+
+.cover__container-wrapper{
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+/* contenedor texto */
+
+.cover__text-left{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    animation: left-text 1s ease-in;
+    opacity: 1;
+}
+@keyframes left-text{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 3;
+    }
+}
+
+.cover__title{
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--secundary);
+}
+.cover__title-color{
+    color: var(--text);
+   
+}
+.cover__subtitle{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--secundary);
+}
+.cover__description{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--secundary);
+    line-height: 28px;
+}
+.cover__button{
+    margin-top: 30px;
+    cursor: pointer;
+    padding: 10px 28px;
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #ffff;
+    background-color: var(--text);
+    box-shadow: -8px 9px 12px -7px rgba(0,0,0,0.78);
+    -webkit-box-shadow: -8px 9px 12px -7px rgba(0,0,0,0.78);
+    -moz-box-shadow: -8px 9px 12px -7px rgba(0,0,0,0.78);
+    transition: 0.7s all;
+    transform: rotate(0deg);
+}
+.darkmode .cover__button{
+    box-shadow: -8px 9px 12px -7px rgba(231, 229, 229, 0.78);
+    -webkit-box-shadow: -8px 9px 12px -7px rgba(240, 239, 239, 0.78);
+    -moz-box-shadow: -8px 9px 12px -7px rgba(230, 225, 225, 0.78);
+}
+
+.cover__button:hover{
+    transform: scale(1.2) rotate(-5deg);
+}
+.cover__social{
+    cursor: pointer;
+    margin-top: 40px;
+    display: flex;
+    font-size: 2.5rem;
+    gap: 40px;
+    color: var(--secundary);
+}
+.cover__social .fa-brands:hover{
+    color: var(--text);
+    transform: scale(1.2);
+    transition: 1s all;
+
+}
+
+/* contenedor imagenes */
+
+.cover__img-right{
+    max-width: 500px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    animation: img-right 1s ease-in;
+
+}
+@keyframes img-right {
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 3;
+    }
+}
+
+
+
+.cover__img{
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    filter: drop-shadow(0px 5px 6px #000);
+}
+
+.cover__background{
+    max-width: 400px;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    border-radius: 87% 13% 74% 26% / 48% 47% 53% 52% ;
+    top: 120px;
+    left: 0;
+    background-color: var(--text);
+}
+
+
+
+

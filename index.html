@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/eb8ab39ed3.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/eb8ab39ed3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header__container">
+            <a class="header__logo" href="#">P.<span class="header__logo-color">F</span>olio</a>
+            <ul class="header__menu-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+            <div class="switch">
+                <i class="fa-regular fa-sun"></i>
+                <i class="fa-solid fa-moon"></i>
+            </div>
+            <div class="menu-btn"><i class="fa-solid fa-bars"></i></div>
+        </header>
+        <section class="cover__container-wrapper">
+            <div class="cover__text-left">
+                <h1 class="cover__title">Hi, I'm <span class="cover__title-color">Reymond</span></h1>
+                <h4 class="cover__subtitle">Web Designer</h4>
+                <p class="cover__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus inventore eligendi ratione, molestias minus illum tempore necessitatibus facilis voluptas voluptatibus.</p>
+                <button class="cover__button">Hire Me!</button>
+                <div class="cover__social">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+            <picture class="cover__img-right">
+                <img class="cover__img" src="assets/img/reymond_portafolio.png" alt="persona">
+                <div class="cover__background"></div>
+            </picture>
+        </section>
+    </div>
+
+
+    <script>
+        const darkMode = document.querySelector('.switch');
+        darkMode.addEventListener('click', ()=>{
+            document.body.classList.toggle('darkmode');
+        })
+    </script>
+</body>
+</html>
