@@ -47,12 +47,26 @@
         </section>
     </div>
 
-
+    <!-- dark mode -->
     <script>
         const darkMode = document.querySelector('.switch');
         darkMode.addEventListener('click', ()=>{
             document.body.classList.toggle('darkmode');
         })
     </script>
+
+    <!-- Menu hamburguesa  -->
+  
+    <script>
+
+        const menuHamburguesa = document.querySelector('.fa-bars');
+        const menuList = document.querySelector('.header__menu-list');
+
+        menuHamburguesa.addEventListener('click', ()=>{
+            menuList.classList.toggle('mobile-btn')
+        })
+
+    </script>
+
 </body>
 </html>
